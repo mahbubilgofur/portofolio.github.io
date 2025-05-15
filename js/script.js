@@ -57,7 +57,7 @@ function toggleVisibility(entries) {
 
 // Buat instance IntersectionObserver
 const observer = new IntersectionObserver(toggleVisibility, {
-  threshold: 0.1, // Ketika 30% dari elemen terlihat di viewport
+  threshold: 0.3, // Ketika 30% dari elemen terlihat di viewport
 });
 
 // Fungsi untuk mengamati elemen-elemen tertentu

@@ -361,7 +361,7 @@ main {
 .home-text1 {
   opacity: 0;
   transform: translateX(-2%);
-  transition: opacity 1s, transform 1s;
+  transition: opacity 7s, transform 1s;
   z-index: 5;
   position: absolute;
   bottom: 20%;
@@ -373,16 +373,16 @@ main {
   -moz-transform: translateX(-2%);
   -ms-transform: translateX(-2%);
   -o-transform: translateX(-2%);
-  -webkit-transition: opacity 1s, transform 1s;
-  -moz-transition: opacity 1s, transform 1s;
-  -ms-transition: opacity 1s, transform 1s;
-  -o-transition: opacity 1s, transform 1s;
+  -webkit-transition: opacity 7s, transform 1s;
+  -moz-transition: opacity 7s, transform 1s;
+  -ms-transition: opacity 7s, transform 1s;
+  -o-transition: opacity 7s, transform 1s;
 }
 
 .home-text2 {
   opacity: 0;
   transform: translateX(2%);
-  transition: opacity 1s, transform 1s;
+  transition: opacity 7s, transform 1s;
   z-index: 7;
   position: absolute;
   bottom: 0;
@@ -394,15 +394,15 @@ main {
   -moz-transform: translateX(2%);
   -ms-transform: translateX(2%);
   -o-transform: translateX(2%);
-  -webkit-transition: opacity 1s, transform 1s;
-  -moz-transition: opacity 1s, transform 1s;
-  -ms-transition: opacity 1s, transform 1s;
-  -o-transition: opacity 1s, transform 1s;
+  -webkit-transition: opacity 7s, transform 1s;
+  -moz-transition: opacity 7s, transform 1s;
+  -ms-transition: opacity 7s, transform 1s;
+  -o-transition: opacity 7s, transform 1s;
 }
 .home-foto-profil {
   opacity: 0;
   transform: translateY(1%);
-  transition: opacity 0.9s, transform 0.9s;
+  transition: opacity 3s, transform 0.9s;
   z-index: 6;
   min-width: 40%;
   height: 100%;
@@ -413,10 +413,10 @@ main {
   -moz-transform: translateY(1%);
   -ms-transform: translateY(1%);
   -o-transform: translateY(1%);
-  -webkit-transition: opacity 0.9s, transform 0.9s;
-  -moz-transition: opacity 0.9s, transform 0.9s;
-  -ms-transition: opacity 0.9s, transform 0.9s;
-  -o-transition: opacity 0.9s, transform 0.9s;
+  -webkit-transition: opacity 3s, transform 0.9s;
+  -moz-transition: opacity 3s, transform 0.9s;
+  -ms-transition: opacity 3s, transform 0.9s;
+  -o-transition: opacity 3s, transform 0.9s;
 }
 .home-foto-profil img {
   width: 100%;
@@ -1041,7 +1041,7 @@ canvas {
 /* ~~~~~~~~~~~~~~~~~~~~~~ */
 #kontak {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1218,6 +1218,7 @@ canvas {
   }
 }
 .right-kontak {
+  position: relative;
   width: 50%;
   height: 100%;
   display: flex;
@@ -1226,19 +1227,18 @@ canvas {
 }
 .form-container {
   width: 90%;
-  height: 90%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: start;
 }
 form {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
   width: 100%;
-  height: 95%;
+  height: 100%;
   padding: 5px;
 }
 form p {
@@ -1248,7 +1248,7 @@ form p {
   color: rgb(255, 255, 255);
 }
 input {
-  margin-top: 20px;
+  margin-top: 10px;
   outline: none;
   font-size: 20px;
   width: 95%;
@@ -1264,7 +1264,7 @@ input {
   -o-border-radius: 10px;
 }
 input:focus {
-  border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(72, 207, 203);
 }
 .inputpesan {
   outline: none;
@@ -1285,9 +1285,7 @@ input:focus {
 }
 .buttonkontak {
   cursor: pointer;
-  position: absolute;
-  bottom: 0;
-  left: 1%;
+  margin-top: 20px;
   width: 80px;
   height: 50px;
   font-size: 20px;
