@@ -1,3 +1,5 @@
+/* ~~~~~~~~~
+/* ~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~ */
 /* bagian fungsi navbar */
 const tombolNav = document.querySelector(".tombol-nav");
