@@ -226,8 +226,8 @@ main {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 500;
   position: fixed;
-  right: 1%;
-  bottom: 1%;
+  right: 2%;
+  bottom: 2%;
   width: 50px;
   padding: 10px;
   height: 23px;
@@ -521,6 +521,9 @@ main {
   align-items: center;
   justify-content: center;
   font-size: 25px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   width: 80%;
   height: 80%;
   flex-direction: column;
@@ -528,6 +531,7 @@ main {
 .tentang-text1 {
   opacity: 0;
   text-align: justify;
+  hyphens: auto;
   transition: opacity 0.9s ease-in-out;
   line-height: 1.9;
   color: rgb(245, 245, 245);
@@ -962,7 +966,7 @@ canvas {
   color: rgb(245, 245, 245);
 }
 .project-container {
-  margin-top: 150px;
+  margin-top: 170px;
   position: relative;
   width: 100%;
   height: 100%;
@@ -978,7 +982,7 @@ canvas {
   transition: opacity 1s, transform 1s;
   margin: 15px;
   width: 380px;
-  height: 500px;
+  height: 550px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -1041,11 +1045,15 @@ canvas {
 .project-deskripsi .text-deskripsiProject {
   text-align: justify;
   color: rgb(255, 255, 255);
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 60%;
 }
 .project-deskripsi .project-dibuat {
   margin-top: 1px;
   width: 100%;
-  height: 100%;
+  height: 40%;
   display: flex;
   align-items: start;
   flex-wrap: wrap;
@@ -1055,7 +1063,7 @@ canvas {
 .project-deskripsi .project-dibuat li {
   border: 1px solid rgb(173, 145, 103);
   list-style-type: none;
-  margin: 10px;
+  margin: 5px;
   padding: 5px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
