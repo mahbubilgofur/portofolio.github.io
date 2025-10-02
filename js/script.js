@@ -64,7 +64,7 @@ const observer = new IntersectionObserver(toggleVisibility, {
 function observeHiddenElements() {
   // Gabungkan semua elemen yang ingin diamati dengan querySelectorAll
   const hiddenElements = document.querySelectorAll(
-    ".tentang-text1, .home- text1, .home-text2,.home-foto-profil,.home-aksesoris-content-profil1,.home-text-baground,.skill-container,.project,h1"
+    ".tentang-text1, .home-text1, .home-text2,.home-foto-profil,.home-aksesoris-content-profil1,.home-text-baground,.skill-container,.project,h1"
   );
   // Menambahkan setiap elemen untuk diamati oleh observer
   hiddenElements.forEach((el) => observer.observe(el));
