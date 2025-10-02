@@ -252,12 +252,10 @@ function kirim() {
   const nama = document.getElementById("input-nama");
   const email = document.getElementById("input-email");
   const subjek = document.getElementById("input-subjek");
-  const pesan = document.getElementById("input-pesan");
 
   const error1 = document.getElementById("pesan-eror-1");
   const error2 = document.getElementById("pesan-eror-2");
   const error3 = document.getElementById("pesan-eror-3");
-  const error4 = document.getElementById("pesan-eror-4");
 
   let adaError = false;
 
@@ -265,7 +263,6 @@ function kirim() {
   error1.textContent = "";
   error2.textContent = "";
   error3.textContent = "";
-  error4.textContent = "";
 
   if (nama.value.trim() === "") {
     error1.textContent = "Nama wajib diisi!";
@@ -292,28 +289,30 @@ function kirim() {
     adaError = true;
   }
 
-  if (pesan.value.trim() === "") {
-    error4.textContent = "Pesan wajib diisi!";
-    setTimeout(() => (error4.textContent = ""), 3000);
-    adaError = true;
-  }
-
   if (!adaError) {
     // Tampilkan SweetAlert2
-    Swal.fire({
-      icon: "success",
-      title: "Pesan berhasil dikirim!",
-      text: "Terima kasih telah menghubungi kami.",
-      confirmButtonColor: "#2a9d8f",
-      timer: 3000,
-      showConfirmButton: false,
-      timerProgressBar: true,
-    });
+   Swal.fire({
+     icon: "success",
+     title: "Pesan berhasil dikirim!",
+     text: "Terima kasih telah menghubungi kami.",
+     background: "rgba(15, 32, 39, 0.95)", // hampir sama kaya body
+     color: "#f5f5f5", // teks tetap jelas
+     confirmButtonColor: "#2a9d8f", // tombol hijau elegan
+     confirmButtonText: "OK",
+     timer: 3000,
+     showConfirmButton: false,
+     timerProgressBar: true,
+     customClass: {
+       popup: "swal2-popup-custom",
+       title: "swal2-title-custom",
+       timerProgressBar: "swal2-timerbar-custom",
+     },
+   });
+
 
     // (Opsional) Kosongkan form setelah berhasil
     nama.value = "";
     email.value = "";
     subjek.value = "";
-    pesan.value = "";
   }
 }
