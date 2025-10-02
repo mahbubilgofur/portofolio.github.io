@@ -46,27 +46,25 @@ closeBtn4.addEventListener("click", () => {
 /* halaman bagian animasi scroll */
 /* ~~~~~~~~~~~~~~~~~~~~~~ */
 // Fungsi untuk menangani visibilitas elemen-elemen yang diamati
-function toggleVisibility(entries) {
+function toggleVisibility(entries, observer) {
   entries.forEach((entry) => {
-    console.log(entry); // Mencetak informasi elemen yang diamati
     if (entry.isIntersecting) {
-      entry.target.classList.add("show"); // Menambahkan kelas 'show' saat elemen masuk viewport
-    } else {
-      entry.target.classList.remove("show"); // Menghapus kelas 'show' saat elemen keluar viewport
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target); // stop observe biar ga dipanggil terus
     }
   });
 }
 
 // Buat instance IntersectionObserver
 const observer = new IntersectionObserver(toggleVisibility, {
-  threshold: 0.3, // Ketika 30% dari elemen terlihat di viewport
+  threshold: 0.1, // Ketika 30% dari elemen terlihat di viewport
 });
 
 // Fungsi untuk mengamati elemen-elemen tertentu
 function observeHiddenElements() {
   // Gabungkan semua elemen yang ingin diamati dengan querySelectorAll
   const hiddenElements = document.querySelectorAll(
-    ".tentang-text1, .home-text1, .home-text2,.home-foto-profil,.home-aksesoris-content-profil1,.home-text-baground,.skill-container,.project,h1"
+    ".tentang-text1, .home- text1, .home-text2,.home-foto-profil,.home-aksesoris-content-profil1,.home-text-baground,.skill-container,.project,h1"
   );
   // Menambahkan setiap elemen untuk diamati oleh observer
   hiddenElements.forEach((el) => observer.observe(el));
