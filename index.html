@@ -45,28 +45,29 @@
 </head>
 
 <body>
+
   <header>
     <div class="header-judul">
-      <p> &lt;/&gt; <span><a href="#home">Mahbubil Dev</a></span></p>
+      <h1 class="judul"> &lt;/&gt; <span><a href="#home">Mahbubil Dev</a></span></h1>
     </div>
     <div class="header-navbar">
-      <div class="tombol-nav">
-        <p>☰</p>
-      </div>
+      <button class="tombol-nav">☰</button>
     </div>
   </header>
+
+  <div class="navbar" id="navbar">
+    <nav>
+      <button class="tombolX-nav" id="closeBtn">X</button>
+      <ul>
+        <li id="li1"><a href="#home">Home</a></li>
+        <li id="li2"><a href="#tentang">Tentang</a></li>
+        <li id="li3"><a href="#project">Project</a></li>
+        <li id="li4"><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+
   <main>
-    <div class="navbar" id="navbar">
-      <nav>
-        <div class="tombolX-nav" id="closeBtn">X</div>
-        <ul>
-          <li id="li1"><a href="#home">Home</a></li>
-          <li id="li2"><a href="#tentang">Tentang</a></li>
-          <li id="li3"><a href="#project">Project</a></li>
-          <li id="li4"><a href="#kontak">Kontak</a></li>
-        </ul>
-      </nav>
-    </div>
     <a href="CV-MOHAMMAD_MAHBUBIL_GOFUR.pdf" download>
       <div class="btn-download">
         <img src="img/asset/download.png" alt="logo download-cv" class="down2">
@@ -86,7 +87,7 @@
       </div>
     </section>
     <section id="tentang">
-      <h1>Tentang</h1>
+      <h2>Tentang</h2>
       <div class="tentang-container">
         <div class="tentang-text">
           <p class="tentang-text1">
@@ -101,24 +102,24 @@
       </div>
     </section>
     <section id="prestasi">
-      <h1>Prestasi</h1>
+      <h2>Prestasi</h2>
       <div class="prestasi-slide">
         <div class="prestasi-slide-container" id="slide-container">
-          <div class="slide">
+          <figure class="slide">
             <img src="./img/sertifikat.jpg" alt="piagam - Mahbubil Gofur" loading="lazy">
-          </div>
-          <div class="slide">
+          </figure>
+          <figure class="slide">
             <img src="./img/sertifikat1.jpg" alt="Sertifikat 1 - Mahbubil Gofur" loading="lazy">
-          </div>
-          <div class="slide">
+          </figure>
+          <figure class="slide">
             <img src="./img/sertifikat2.jpg" alt="Sertifikat 2 - Mahbubil Gofur" loading="lazy">
-          </div>
-          <div class="slide">
+          </figure>
+          <figure class="slide">
             <img src="./img/sertifikat3.png" alt="Sertifikat 3 - Mahbubil Gofur" loading="lazy">
-          </div>
-          <div class="slide">
+          </figure>
+          <figure class="slide">
             <img src="./img/sertifikat4.png" alt="Sertifikat 4 - Mahbubil Gofur" loading="lazy">
-          </div>
+          </figure>
         </div>
         <button class="tombol-btn kiri-btn" onclick="moveSlide(-1)" aria-label="Slide Sebelumnya">❮</button>
         <button class="tombol-btn kanan-btn" onclick="moveSlide(1)" aria-label="Slide Berikutnya">❯</button>
@@ -131,7 +132,7 @@
       <div class="skill-container">
         <canvas id="lineCanvas" width="1000" height="800"></canvas>
         <div class="content-skill-center">
-          <p class="text-skill">SKILL</p>
+          <h2 class="text-skill">SKILL</h2>
           <div class="konten-skill-center"></div>
           <div class="konten-skill">
             <div class="kontent-skill-dot"></div>
@@ -164,12 +165,12 @@
       </div>
     </section>
     <section id="project">
-      <h1>Project</h1>
+      <h2>Project</h2>
       <!-- p1 -->
       <div class="project-container">
         <article class="project">
           <div class="left-project">
-            <h2>AbsensiSiswa</h2>
+            <h>AbsensiSiswa</h>
             <img src="./img/foto-project1.png" alt="Aplikasi Web Absensi Siswa - Mahbubil Gofur" loading="lazy">
           </div>
           <div class="right-project">
@@ -184,15 +185,15 @@
                 <li>MySQL</li>
               </div>
             </div>
-            <div class="project-link-icon">
+            <button class="project-link-icon">
               <a href="https://github.com/mahbubilgofur/Absensi_siswa" target="_blank" rel="noopener noreferrer"><img
                   src="./img/asset/github.svg" alt="GitHub AbsensiSiswa"></a>
-            </div>
+            </button>
           </div>
         </article>
         <article class="project">
           <div class="left-project">
-            <h2>ShopEase</h2>
+            <h>ShopEase</h>
             <img src="./img/foto-project2.png" alt="Aplikasi Web ShopEase(Toko Online) - Mahbubil Gofur" loading="lazy">
           </div>
           <div class="right-project">
@@ -206,15 +207,15 @@
                 <li>MySQL</li>
               </div>
             </div>
-            <div class="project-link-icon">
+            <button class="project-link-icon">
               <a href="https://github.com/mahbubilgofur/TOKO_K_STORE" target="_blank" rel="noopener noreferrer"><img
                   src="./img/asset/github.svg" alt="GitHub ShopEase"></a>
-            </div>
+            </button>
           </div>
         </article>
         <article class="project">
           <div class="left-project">
-            <h2>BobbyPixel</h2>
+            <h>BobbyPixel</h>
             <img src="./img/foto-project3.png" alt="Aplikasi Web BobbyPixel(GaleryFoto web) - Mahbubil Gofur" loading="lazy">
           </div>
           <div class="right-project">
@@ -229,15 +230,15 @@
                 <li>MySQL</li>
               </div>
             </div>
-            <div class="project-link-icon">
+            <button class="project-link-icon">
               <a href="https://github.com/mahbubilgofur/galery_foto" target="_blank" rel="noopener noreferrer"><img
                   src="./img/asset/github.svg" alt="GitHub BobbyPixel"></a>
-            </div>
+            </button>
           </div>
         </article>
         <article class="project">
           <div class="left-project">
-            <h2>GrandEsport</h2>
+            <h>GrandEsport</h>
             <img src="./img/foto-project4.png" alt="Aplikasi Web GrandEsport(Turnamen MLBB) - Mahbubil Gofur" loading="lazy">
           </div>
           <div class="right-project">
@@ -251,15 +252,15 @@
                 <li>JavaScript</li>
               </div>
             </div>
-            <div class="project-link-icon">
+            <button class="project-link-icon">
               <a href="https://github.com/mahbubilgofur/grandesport.github.io" target="_blank"
                 rel="noopener noreferrer"><img src="./img/asset/github.svg" alt="github GrandEsport"></a>
-            </div>
+            </button>
           </div>
         </article>
         <article class="project">
           <div class="left-project">
-            <h2>Myproject</h2>
+            <h>Myproject</h>
             <img src="./img/foto-project5.png" alt="Aplikasi Web MyProject(Mengonversi Suhu) - Mahbubil Gofur" loading="lazy">
           </div>
           <div class="right-project">
@@ -272,10 +273,10 @@
                 <li>JavaScript</li>
               </div>
             </div>
-            <div class="project-link-icon">
+            <button class="project-link-icon">
               <a href="https://github.com/mahbubilgofur/MyProject.github.io" target="_blank"
                 rel="noopener noreferrer"><img src="./img/asset/github.svg" alt="GitHub MyProject"></a>
-            </div>
+            </button>
           </div>
         </article>
       </div>

@@ -42,7 +42,7 @@ header {
   font-style: normal;
   font-weight: 400;
 }
-.header-judul p {
+.header-judul .judul {
   cursor: pointer;
   padding-top: 20px;
   padding-left: 30px;
@@ -50,17 +50,17 @@ header {
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
-.header-judul p span {
+.header-judul .judul span {
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
-.header-judul p span a {
+.header-judul .judul span a {
   text-decoration: none;
 
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
-.header-judul p:hover {
+.header-judul .judul:hover {
   color: rgb(72, 207, 203);
 }
 
@@ -78,19 +78,16 @@ header {
   justify-content: center;
   align-items: center;
   background-color: rgb(245, 245, 245);
-  border: 1px solid rgb(245, 245, 245);
+  border: none;
   width: 40px;
   height: 40px;
+  font-size: 25px;
   color: rgba(0, 0, 0, 0.268);
   border-radius: 100% 100% 100% 50%;
   -webkit-border-radius: 100% 100% 100% 50%;
   -moz-border-radius: 100% 100% 100% 50%;
   -ms-border-radius: 100% 100% 100% 50%;
   -o-border-radius: 100% 100% 100% 50%;
-}
-.header-navbar p {
-  font-size: 25px;
-  padding-bottom: 2px;
 }
 .tombol-nav:hover {
   transition: all 0.1s;
@@ -180,6 +177,8 @@ nav {
   right: 0%;
   font-size: 25px;
   color: #48cfcf;
+  background: none;
+  border: none;
 }
 .tombolX-nav:hover {
   transition: all 0.2s;
@@ -439,7 +438,7 @@ main {
   align-items: center;
   justify-content: center;
 }
-#tentang h1 {
+#tentang h2 {
   position: absolute;
   left: 10%;
   top: 10%;
@@ -492,7 +491,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-#prestasi h1 {
+#prestasi h2 {
   position: absolute;
   left: 10%;
   top: 10%;
@@ -607,7 +606,7 @@ main {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background: rgba(0, 0, 0, 0.698);
+  background-color: rgba(0, 0, 0, 0.698);
   border: none;
   color: rgb(245, 245, 245);
   font-size: 18px;
@@ -907,7 +906,7 @@ canvas {
   justify-content: center;
   overflow: hidden;
 }
-#project h1 {
+#project h2 {
   position: absolute;
   left: 10%;
   top: 3%;
@@ -967,11 +966,12 @@ canvas {
   align-items: center;
   justify-content: center;
 }
-.left-project h2 {
+.left-project h3 {
   position: absolute;
   top: 5%;
   color: #2a9d8f;
   left: 5%;
+  font-size: 25px;
 }
 .left-project img {
   position: absolute;
@@ -1037,6 +1037,7 @@ canvas {
   position: absolute;
   right: 0;
   bottom: 0;
+  border: none;
   border-radius: 0 0 10px 0;
   background-color: white;
   width: 60px;
